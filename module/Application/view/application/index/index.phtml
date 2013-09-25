@@ -1,0 +1,8 @@
+<?php
+/** @var $playlist Application\Model\Playlist */
+foreach ($this->playlists as $playlist): ?>
+
+    <a href="/playlist?playlist=<?= $playlist->getId() ?>"><?= $playlist->getName(); ?></a>
+    <br />
+
+<?php endforeach; ?>
